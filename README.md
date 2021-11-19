@@ -1,4 +1,4 @@
-# r-js
+# js-r
 
 [![NPM version][npm-image]][npm-url]
 [![build status][ci-image]][ci-url]
@@ -9,17 +9,17 @@ Tool.
 
 ## Installation
 
-`$ npm i r-js`
+`$ npm i js-r`
 
 ## License
 
 [MIT](./LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/r-js.svg
-[npm-url]: https://www.npmjs.com/package/r-js
-[ci-image]: https://github.com/josoriom/r-js/workflows/Node.js%20CI/badge.svg?branch=main
-[ci-url]: https://github.com/josoriom/r-js/actions?query=workflow%3A%22Node.js+CI%22
-[codecov-image]: https://img.shields.io/codecov/c/github/josoriom/r-js.svg
-[codecov-url]: https://codecov.io/gh/josoriom/r-js
-[download-image]: https://img.shields.io/npm/dm/r-js.svg
-[download-url]: https://www.npmjs.com/package/r-js
+[npm-image]: https://img.shields.io/npm/v/js-r.svg
+[npm-url]: https://www.npmjs.com/package/js-r
+[ci-image]: https://github.com/josoriom/js-r/workflows/Node.js%20CI/badge.svg?branch=main
+[ci-url]: https://github.com/josoriom/js-r/actions?query=workflow%3A%22Node.js+CI%22
+[codecov-image]: https://img.shields.io/codecov/c/github/josoriom/js-r.svg
+[codecov-url]: https://codecov.io/gh/josoriom/js-r
+[download-image]: https://img.shields.io/npm/dm/js-r.svg
+[download-url]: https://www.npmjs.com/package/js-r

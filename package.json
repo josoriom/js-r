@@ -1,5 +1,5 @@
 {
-  "name": "r-js",
+  "name": "js-r",
   "version": "0.0.0",
   "description": "Tool",
   "main": "./lib/index.js",
@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/josoriom/r-js.git"
+    "url": "git+https://github.com/josoriom/js-r.git"
   },
   "bugs": {
-    "url": "https://github.com/josoriom/r-js/issues"
+    "url": "https://github.com/josoriom/js-r/issues"
   },
-  "homepage": "https://github.com/josoriom/r-js#readme",
+  "homepage": "https://github.com/josoriom/js-r#readme",
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
