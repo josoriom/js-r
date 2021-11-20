@@ -1,7 +1,3 @@
-/**
- * My module
- * @returns A very important number
- */
-export function myModule(): number {
-  return 42;
-}
+export { array2DFromPrintedList } from './utilities/array2DFromPrintedList';
+
+export { extractData } from './utilities/extractData';
