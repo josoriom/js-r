@@ -1,4 +1,4 @@
-import { extractData } from './extractData';
+import { arrayFromRPrintedVector } from './arrayFromRPrintedVector';
 
 /**
  * My module
@@ -11,7 +11,7 @@ export function array2DFromPrintedList(list: string) {
   let result = [];
   for (let element of elements) {
     if (element === '') continue;
-    result.push(extractData(element));
+    result.push(arrayFromRPrintedVector(element));
   }
   return result;
 }

@@ -41,6 +41,6 @@ describe('Extracting printed list with numbers', () => {
     [[4]]
     [1] 1+4i`;
     const array = array2DFromPrintedList(listMultiType);
-    expect(array).toStrictEqual([[1], 'a', true, '1+4i']);
+    expect(array).toStrictEqual([[1], ['a'], [true], ['1+4i']]);
   });
 });
