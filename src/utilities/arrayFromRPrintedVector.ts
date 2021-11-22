@@ -2,7 +2,7 @@ import { getData } from './getData';
 /**
  * extractData
  * @param item - The data as string to find the type
- * @returns R data type
+ * @returns Array with the the data
  */
 
 export function arrayFromRPrintedVector(item: string) {

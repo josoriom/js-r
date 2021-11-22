@@ -1,6 +1,6 @@
 /**
  * checkTypes
- * @param item - The data as string to find the type
+ * @param item - The data as string
  * @returns R data type
  */
 

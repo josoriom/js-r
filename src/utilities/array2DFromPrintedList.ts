@@ -2,7 +2,7 @@ import { arrayFromRPrintedVector } from './arrayFromRPrintedVector';
 
 /**
  * My module
- * @returns An array with arrays with whatever that is in the list
+ * @returns An array of arrays with whatever that is in the list
  */
 
 export function array2DFromPrintedList(list: string) {
