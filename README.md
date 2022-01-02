@@ -22,7 +22,7 @@ const vector = `
 `;
 
 const array = arrayFromRPrintedVector(vector);
-console.log(array) // ['1.2+4.9i', 56, true, false, 'hello_world', 'hello_world', 89.7]
+console.log(array) // [{ re: 1.2, im: 4.9 }, 56, true, false, 'hello_world', 'hello_world', 89.7]
 ```
 
 ### [Array 2D from R printed list](./src/utilities/arrayFromRPrintedVector.ts)
@@ -42,7 +42,7 @@ const list = `
     [1] 1+4i
 `;
 const array = array2DFromPrintedList(list);
-console.log(array) // [[1, 3], ['a'], [true], ['1+4i']]
+console.log(array) // [[1, 3], ['a'], [true], [{ re: 1, im: 4 }]]
 ```
 
 ## License
