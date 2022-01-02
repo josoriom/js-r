@@ -58,7 +58,7 @@ describe('Extracting printed vectors with any R type', () => {
   const array = arrayFromRPrintedVector(vector);
   it('Should return a JS array from the string printed in R', () => {
     expect(array).toStrictEqual([
-      '1.2+4.9i',
+      { re: 1.2, im: 4.9 },
       56,
       true,
       false,

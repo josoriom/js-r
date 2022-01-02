@@ -20,7 +20,7 @@ describe('Extracting printed list with numbers', () => {
     [6]  70  71  72  73 86
     `;
 
-    const array = array2DFromPrintedList(list) as number[][];
+    const array: number[][] = array2DFromPrintedList(list);
 
     expect(array[0]).toStrictEqual([1, 2, 3, 4, 5, 40, 41, 42, 43, 56]);
     expect(array[1]).toStrictEqual([6, 7, 8, 9, 10, 50, 51, 52, 53, 66]);
@@ -29,7 +29,8 @@ describe('Extracting printed list with numbers', () => {
   });
 
   it('Should return a JS array with multiple types from the string printed in R', () => {
-    const listMultiType = `[[1]]
+    const listMultiType = `
+    [[1]]
     [1] 1
 
     [[2]]
@@ -39,8 +40,10 @@ describe('Extracting printed list with numbers', () => {
     [1] TRUE
 
     [[4]]
-    [1] 1+4i`;
-    const array = array2DFromPrintedList(listMultiType);
-    expect(array).toStrictEqual([[1], ['a'], [true], ['1+4i']]);
+    [1] 1+4i
+    `;
+    const array: (boolean | string | number | { re: number; im: number })[][] =
+      array2DFromPrintedList(listMultiType);
+    expect(array).toStrictEqual([[1], ['a'], [true], [{ re: 1, im: 4 }]]);
   });
 });

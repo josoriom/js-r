@@ -50,9 +50,8 @@ describe('Extracting integers', () => {
 
 describe('Extracting complex numbers', () => {
   it('Should return the string without whitespaces', () => {
-    expect(getData('   1+4i')).toBe('1+4i');
-    expect(getData('   1-4i')).toBe('1-4i');
-    expect(getData('   1.2+4.9i')).toBe('1.2+4.9i');
-    expect(getData('   4i')).toBe('4i');
+    expect(getData('   123+4i')).toStrictEqual({ re: 123, im: 4 });
+    expect(getData('   1-4i')).toStrictEqual({ re: 1, im: -4 });
+    expect(getData('   1.2+4.9i')).toStrictEqual({ re: 1.2, im: 4.9 });
   });
 });

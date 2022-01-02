@@ -9,7 +9,7 @@ export function getData(item: string) {
   item = item.trim();
   const type: string = checkTypes(item) as string;
   if (type === 'numeric') {
-    return parseFloat(item);
+    return Number(item);
   } else if (type === 'logical') {
     return JSON.parse(item.toLowerCase());
   } else if (type === 'character') {
@@ -17,6 +17,9 @@ export function getData(item: string) {
   } else if (type === 'integer') {
     return parseInt(item, 10);
   } else if (type === 'complex') {
-    return item;
+    const index = item.search(/[+-]/);
+    const re = item.slice(0, index);
+    const im = item.slice(index, item.length).replace('i', '');
+    return { re: Number(re), im: Number(im) };
   }
 }
